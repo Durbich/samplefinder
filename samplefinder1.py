@@ -9,7 +9,7 @@ def analyze(text):
 
     while (start + width*2) <= len(text):
         sample = text[start : start+width]
-        samplecount = text.count(sample)
+        samplecount = text[start:].count(sample)
         if samplecount == 1:
             start += width
             width = 1
